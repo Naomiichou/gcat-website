@@ -4,148 +4,268 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta
+    name="description"
+    content="GCAT 澳洲代購，提供澳洲保健品、嬰幼兒用品、美妝保養及居家生活商品。"
+  >
+
   <title>GCAT 澳洲代購</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, "Microsoft JhengHei", sans-serif;
-      color: #222;
-      background: #fff;
-    }
-
-    header {
-      padding: 20px;
-      text-align: center;
-      border-bottom: 1px solid #eee;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 28px;
-    }
-
-    nav {
-      margin-top: 15px;
-    }
-
-    nav a {
-      margin: 0 10px;
-      color: #333;
-      text-decoration: none;
-    }
-
-    .hero {
-      padding: 80px 20px;
-      text-align: center;
-      background: #f5f5f5;
-    }
-
-    .hero h2 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      color: #666;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 14px 28px;
-      color: white;
-      background: #222;
-      text-decoration: none;
-      border-radius: 4px;
-    }
-
-    .section {
-      max-width: 1200px;
-      margin: auto;
-      padding: 50px 20px;
-    }
-
-    .section h2 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-    }
-
-    .category {
-      padding: 40px 15px;
-      text-align: center;
-      background: #f7f7f7;
-      border-radius: 6px;
-    }
-
-    footer {
-      padding: 35px 20px;
-      text-align: center;
-      color: white;
-      background: #222;
-    }
-
-    @media (max-width: 749px) {
-      .hero {
-        padding: 55px 20px;
-      }
-
-      .hero h2 {
-        font-size: 28px;
-      }
-
-      .categories {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <header>
-    <h1>GCAT</h1>
+  <!-- 頂部公告 -->
+  <div class="announcement">
+    澳洲選品・正品採購・安心出貨
+  </div>
 
-    <nav>
-      <a href="#">首頁</a>
-      <a href="#">保健用品</a>
-      <a href="#">嬰幼兒用品</a>
-      <a href="#">美妝保養</a>
-      <a href="#">聯絡我們</a>
-    </nav>
+  <!-- 網站導覽 -->
+  <header class="site-header">
+    <div class="header-inner">
+
+      <a class="logo" href="index.html">
+        GCAT
+      </a>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="開啟選單"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <nav class="main-nav">
+        <a href="index.html">首頁</a>
+        <a href="#categories">商品分類</a>
+        <a href="#featured">熱門商品</a>
+        <a href="#about">關於 GCAT</a>
+        <a href="#contact">聯絡我們</a>
+      </nav>
+
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>澳洲人氣商品直送</h2>
-    <p>澳洲選品・正品採購・安心出貨</p>
-    <a class="button" href="#products">開始選購</a>
-  </section>
+  <main>
 
-  <section class="section" id="products">
-    <h2>商品分類</h2>
+    <!-- 首頁大圖 -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-label">AUSTRALIAN PRODUCTS</p>
 
-    <div class="categories">
-      <div class="category">澳洲保健品</div>
-      <div class="category">嬰幼兒用品</div>
-      <div class="category">美妝保養</div>
-      <div class="category">居家生活</div>
+        <h1>澳洲人氣商品直送</h1>
+
+        <p>
+          精選澳洲保健、嬰幼兒、美妝與生活用品
+        </p>
+
+        <a class="primary-button" href="#categories">
+          開始選購
+        </a>
+      </div>
+    </section>
+
+    <!-- 商品分類 -->
+    <section class="section" id="categories">
+      <div class="section-heading">
+        <p>SHOP BY CATEGORY</p>
+        <h2>熱門商品分類</h2>
+      </div>
+
+      <div class="category-grid">
+
+        <a class="category-card" href="#">
+          <div class="category-image placeholder-image">
+            Health
+          </div>
+          <h3>澳洲保健品</h3>
+          <span>查看商品 →</span>
+        </a>
+
+        <a class="category-card" href="#">
+          <div class="category-image placeholder-image">
+            Baby
+          </div>
+          <h3>嬰幼兒用品</h3>
+          <span>查看商品 →</span>
+        </a>
+
+        <a class="category-card" href="#">
+          <div class="category-image placeholder-image">
+            Beauty
+          </div>
+          <h3>美妝保養</h3>
+          <span>查看商品 →</span>
+        </a>
+
+        <a class="category-card" href="#">
+          <div class="category-image placeholder-image">
+            Home
+          </div>
+          <h3>居家生活</h3>
+          <span>查看商品 →</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- 熱門商品 -->
+    <section class="section section-light" id="featured">
+      <div class="section-heading">
+        <p>BEST SELLERS</p>
+        <h2>熱門商品</h2>
+      </div>
+
+      <div class="product-grid">
+
+        <article class="product-card">
+          <div class="product-image placeholder-image">
+            商品圖片
+          </div>
+
+          <div class="product-info">
+            <span class="product-status">澳洲現貨</span>
+            <h3>商品名稱範例一</h3>
+            <p class="price">NT$ 450</p>
+            <a href="#" class="product-link">查看商品</a>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image placeholder-image">
+            商品圖片
+          </div>
+
+          <div class="product-info">
+            <span class="product-status">澳洲現貨</span>
+            <h3>商品名稱範例二</h3>
+            <p class="price">NT$ 590</p>
+            <a href="#" class="product-link">查看商品</a>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image placeholder-image">
+            商品圖片
+          </div>
+
+          <div class="product-info">
+            <span class="product-status">預購商品</span>
+            <h3>商品名稱範例三</h3>
+            <p class="price">NT$ 380</p>
+            <a href="#" class="product-link">查看商品</a>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image placeholder-image">
+            商品圖片
+          </div>
+
+          <div class="product-info">
+            <span class="product-status">澳洲現貨</span>
+            <h3>商品名稱範例四</h3>
+            <p class="price">NT$ 720</p>
+            <a href="#" class="product-link">查看商品</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 品牌特色 -->
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p>WHY GCAT</p>
+        <h2>安心選購澳洲商品</h2>
+      </div>
+
+      <div class="feature-grid">
+
+        <div class="feature-item">
+          <h3>澳洲當地採購</h3>
+          <p>由澳洲當地採買，提供清楚的商品來源。</p>
+        </div>
+
+        <div class="feature-item">
+          <h3>正品安心</h3>
+          <p>精選澳洲知名品牌與人氣商品。</p>
+        </div>
+
+        <div class="feature-item">
+          <h3>人工確認訂單</h3>
+          <p>下單後確認商品、運費及付款資料。</p>
+        </div>
+
+        <div class="feature-item">
+          <h3>付款後安排出貨</h3>
+          <p>完成銀行轉帳後，依訂單狀態安排寄送。</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 訂購流程 -->
+    <section class="order-section">
+      <div class="order-content">
+        <p>HOW TO ORDER</p>
+        <h2>簡單四步驟完成訂購</h2>
+
+        <div class="order-steps">
+          <span>選擇商品</span>
+          <span>填寫訂購資料</span>
+          <span>確認金額並轉帳</span>
+          <span>付款後安排出貨</span>
+        </div>
+
+        <a class="secondary-button" href="#contact">
+          聯絡 GCAT
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 頁尾 -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-grid">
+
+      <div>
+        <h2>GCAT</h2>
+        <p>澳洲人氣商品與生活選品。</p>
+      </div>
+
+      <div>
+        <h3>商品分類</h3>
+        <a href="#">澳洲保健品</a>
+        <a href="#">嬰幼兒用品</a>
+        <a href="#">美妝保養</a>
+        <a href="#">居家生活</a>
+      </div>
+
+      <div>
+        <h3>購物資訊</h3>
+        <a href="#">訂購方式</a>
+        <a href="#">付款方式</a>
+        <a href="#">運送說明</a>
+        <a href="#">常見問題</a>
+      </div>
+
+      <div>
+        <h3>聯絡我們</h3>
+        <p>請在這裡放 LINE、Email 或社群資訊。</p>
+      </div>
+
     </div>
-  </section>
 
-  <footer>
-    © 2026 GCAT 澳洲代購
+    <div class="copyright">
+      © 2026 GCAT 澳洲代購
+    </div>
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 </html>
